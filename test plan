@@ -1,0 +1,54 @@
+COVERAGE
+Create
+Edit
+Delete
+Performance
+Load/stress
+Threshold
+
+
+REQUIREMENTS
+No duped email addresses
+Unique email addresses
+Id is unique
+Name and title are editable
+
+FUNCTIONS - HAPPY PATH
+Create | Unique email |
+Create | Unique ID created
+Create | Name
+Create | Title
+Edit | Name
+Edit | Title
+Delete | 
+
+NEGATIVE
+Create | dupe email
+Create | blank email
+Create | blank name
+Create | blank title
+Create | additional “non-existing” data end points
+Edit | dupe name
+Edit | dupe title
+Create | ID value given
+Create | ID dupe
+
+THRESHOLD
+Create | Unique email | unique characters
+Create | Unique email | improper format
+Create | Unique email | over character count limit
+Create | name | unique characters
+Create | name | over character count limit
+Create | title | unique characters
+Create | title | over character count limit
+Edit | Unique email | unique characters
+Edit | Unique email | improper format
+Edit | Unique email | over character count limit
+Edit | name | unique characters
+Edit | name | over character count limit
+Edit | title | unique characters
+Edit | title | over character count limit
+
+PERFORMANCE
+
+LOAD AND STRESS TESTING
